@@ -7,10 +7,10 @@ const Home = () => {
         <div className="container mt-5">
             <div className="card shadow-lg border-0">
                 <div className="row g-0">
-                    <div className="col-md-4 d-flex align-items-center justify-content-center bg-light">
+                    <div className="col-md-4 d-flex align-items-center justify-content-center">
                         <img
                             src="./logo.png"
-                            className="img-fluid rounded-start p-3"
+                            className="img-fluid rounded-start p-0"
                             alt="Logo"
                         />
                     </div>
