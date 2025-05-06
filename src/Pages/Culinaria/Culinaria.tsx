@@ -37,7 +37,7 @@ const restaurantesData: RestauranteData[] = [
     descricao: 'Um dos melhores locais para saborear açaí e outras iguarias regionais no Pará.',
     imagem: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/81/e8/a5/campeao-de-venda-chapa.jpg?w=1800&h=1000&s=1',
     linkMapa: criarLinkGoogleMaps('Point do Açaí Belle Époque Bar, Belém PA'),
-    linkMaisInfo: 'https://www.tripadvisor.com.br/Restaurant_Review-g528793-d1006253-https://www.tripadvisor.com.br/Restaurant_Review-g303404-d6483240-Reviews-Restaurante_Point_do_Acai-Belem_State_of_Para.htmlReviews-Point_do_Acai-Belem_State_of_Para.html',
+    linkMaisInfo: 'https://www.instagram.com/pointdoacaibelem/',
   },
   {
     id: 4,
