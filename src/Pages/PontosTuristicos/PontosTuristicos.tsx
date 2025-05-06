@@ -20,7 +20,7 @@ const pontosTuristicosData: PontoTuristicoData[] = [
     nome: 'Mercado Ver-o-Peso',
     descricao: 'O maior mercado a céu aberto da América Latina, com cores, cheiros e sabores regionais.',
     imagem: '/ImagensPontos/mercado-ver-o-peso.jpg',
-    linkMaisInfo: 'https://pt.wikipedia.org/wiki/Mercado_Ver-o-Peso',
+    linkMaisInfo: 'https://veropeso.com.br/',
     linkMapa: criarLinkGoogleMaps('Mercado Ver-o-Peso, Belém PA') 
   },
   {
