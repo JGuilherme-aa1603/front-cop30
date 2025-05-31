@@ -73,48 +73,34 @@ const Sugestoes = () => {
         <div className="container py-5">
             <h1 className="mb-4 text-center page-title">Sugestões</h1>
             {erro && <div className="alert alert-danger">{erro}</div>}
-            <form onSubmit={criarSugestao} className="mb-4 row g-2 align-items-end">
-            <div className="col-md-4">
-                <label className="form-label">Título</label>
-                <input
-                className="form-control"
-                placeholder="Título"
-                value={novaSugestao.titulo}
-                onChange={e => setNovaSugestao({ ...novaSugestao, titulo: e.target.value })}
-                required
-                />
-            </div>
-            <div className="col-md-5">
-                <label className="form-label">Descrição</label>
-                <textarea
-                className="form-control"
-                placeholder="Descreva sua sugestão com detalhes"
-                value={novaSugestao.descricao}
-                onChange={e => setNovaSugestao({ ...novaSugestao, descricao: e.target.value })}
-                required
-                rows={5}
-                style={{ resize: "vertical", minHeight: 100 }}
-                />
-            </div>
-                <style>
-                    {`
-                        .card.h-100 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                        }
-                        @media (max-width: 767px) {
-                            .card.h-100 {
-                                min-height: 180px;
-                            }
-                        }
-                    `}
-                </style>
-                <div className="col-md-3 d-grid">
-                    <button type="submit" className="btn btn-primary">
-                        Adicionar
-                    </button>
+            <form onSubmit={criarSugestao} className="mb-4">
+                <div className="col-md-4">
+                    <label className="form-label">Título</label>
+                    <input
+                    className="form-control"
+                    placeholder="Título"
+                    value={novaSugestao.titulo}
+                    onChange={e => setNovaSugestao({ ...novaSugestao, titulo: e.target.value })}
+                    required
+                    />
                 </div>
+                <div className="col-md-5">
+                    <label className="form-label">Descrição</label>
+                    <textarea
+                    className="form-control"
+                    placeholder="Descreva sua sugestão com detalhes"
+                    value={novaSugestao.descricao}
+                    onChange={e => setNovaSugestao({ ...novaSugestao, descricao: e.target.value })}
+                    required
+                    rows={5}
+                    style={{ resize: "vertical", minHeight: 100 }}
+                    />
+                </div>
+                    <div className="col-md-3 d-grid">
+                        <button type="submit" className="btn btn-primary">
+                            Adicionar
+                        </button>
+                    </div>
             </form>
             {loading ? (
                 <div className="text-center">
